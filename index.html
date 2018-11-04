@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>My Style Guide</title>
+    <title>New England Patriots Fan Page Style Guide</title>
 
     <!-- Site theme -->
     <link rel="stylesheet" type="text/css" href="css/theme.css">
@@ -15,28 +15,32 @@
     <!--  Place Custom Styles Below -->
     <style>
         body {
-            font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+            font-family: Georgia, 'Times New Roman', Times, serif;
             color: black;
         }
 
         h1 {
-            font-size: 24px;
+            font-size: 36px;
             font-weight: bold;
         }
 
         h2 {
-            font-size: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            font-style: italic; 
         }
 
         h3 {
-            font-size: 16px;
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
         }
 
         button {
-            background-color: orange;
-            border-radius: 5px;
-            padding: 10px;
-            color: white;
+            background-color: #C60C30;
+            border-radius: 4px;
+            padding: 6px;
+            color: black;
         }
 
         .inputLabel {
@@ -46,7 +50,7 @@
 
         input.inputField {
             padding: 5px;
-            border: 1px solid orange;
+            border: 1px solid #B0B7BC;
         }
 
         div.box {
@@ -57,43 +61,35 @@
         }
 
         #primary1 {
-            background-color: orange;
+            background-color: #002244;
         }
 
         #primary2 {
-            background-color: red;
+            background-color: #C60C30;
         }
 
         #primary3 {
-            background-color: yellow;
+            background-color: #B0B7BC;
         }
 
-        .warning {
-            background-color: yellow;
+        .error {
+            background-color: #C60C30;
             font-weight: bold;
-            color: black;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        .danger {
-            background-color: red;
-            font-weight: bold;
-            color: white;
+            color: #B0B7BC;
             padding: 10px;
             border-radius: 5px;
         }
 
         .success {
-            background-color: green;
+            background-color: #002244;
             font-weight: bold;
-            color: white;
+            color: #B0B7BC;
             padding: 10px;
             border-radius: 5px;
         }
 
         svg.svg-inline--fa {
-            color: white;
+            color: #C60C30;
         }
 
         .spacer {
@@ -101,7 +97,7 @@
         }
 
         #footer {
-            border-top: 1px solid #dddddd;
+            border-top: 1px solid #B0B7BC;
             margin-top: 50px;
             padding: 10px;
             text-align: center;
@@ -118,7 +114,7 @@
             <div class="navbar-header">
                 <a href="#">
                     <span class="navbar-brand">
-                        <i class="fas fa-home"></i>My Interface Style Guide</span>
+                        <i class="fas fa-home"></i>New England Patriots Fan Page Style Guide</span>
                 </a>
             </div>
         </div>
@@ -153,7 +149,7 @@
                     <h1>
                         <a name="about"></a>My Styles</h1>
                 </div>
-                <p>This page contains specific style guide information for my front end interface.</p>
+                <p>This page contains specific style guide information for the New England Patriots fan page.</p>
             </div>
             <!-- End About -->
 
@@ -163,8 +159,7 @@
                     <h1>
                         <a name="fonts"></a>Font</h1>
                 </div>
-                <p>My application utilizes the "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica,
-                    Arial, "sans-serif" font-family with black text.</p>
+                <p>My application utilizes the "Georgia", "Times New Roman", "Times", "serif" font-family with black text.</p>
             </div>
             <div class="spacer">
                 <a href="#Top">Back to Top</a>
@@ -210,7 +205,7 @@
                         <a name="buttons"></a>Buttons</h1>
                 </div>
                 <p>The application will feature buttons that contain the below color and shape:</p>
-                <button>My Button</button>
+                <button>Go Patriots!</button>
             </div>
             <div class="spacer">
                 <a href="#Top">Back to Top</a>
@@ -225,8 +220,29 @@
                 </div>
                 <p>For the varous forms that the application will contain, it will contain input fields and labels with the below styling:</p>
                 <form>
-                    <label for="name" class="inputLabel">Name</label>
-                    <input type="input" id="name" class="inputField" value="">
+                    <label for="search" class="searchLabel"></label>
+                    <input type="search" id="search" placeholder="Enter keyword"/>
+                    <input type="submit" value="Search"/>
+                </form>
+                <br/>
+                <form>
+                    <p>Did you like our website?
+                    <label>
+                        <input type="radio" name="rating" value="yes"/>
+                        Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="no"/>
+                        No
+                    </label>
+                    </p>  
+                </form>
+                <br/>
+                <form>
+                    <label>
+                        <input type="checkbox" name="notifications" checked="checked"/>
+                        Would you like to be notified when there are New England Patriot updates?
+                    </label>
                 </form>
             </div>
             <div class="spacer">
@@ -241,8 +257,7 @@
                         <a name="messages"></a>Messages</h1>
                 </div>
                 <p>For various completed tasks, application notifications will be presented to the user based.  The following contextual messages will be used.</p>
-                <p class="warning">Warning!</p>
-                <p class="danger">Danger!</p>
+                <p class="error">Error!</p>
                 <p class="success">Success!</p>
             </div>
             <div class="spacer">
@@ -253,7 +268,7 @@
     </div>
     <div id="footer">
         <div class="container">
-            <p class="text-muted">Copyright My Style Guide</p>
+            <p class="text-muted">Copyright New England Patriots Fan Page Style Guide</p>
         </div>
     </div>
 </body>
